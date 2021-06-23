@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Viaoda Libre', cursive;
+}
+
+body {
+    background-color: crimson;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: ;
+}
+
+.container {
+    width: 90vw;
+    min-height: 50vh;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px 10px;
+    border-radius: 5px;
+    
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form input {
+    display: block;
+    min-width: 10vw;
+    width: 100%;
+    padding: 5px;
+}
+
+button {
+    margin-top: 10px;
+    background-color: crimson;
+    color: #fff;
+    border: 1px solid crimson;
+    border-radius: 5px;
+    padding: 5px;
+    min-width: 10vw;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #fff;
+    color: crimson;
+}
+
+.recipes {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.recipe {
+    border: 2px solid crimson;
+    border-radius: 5px;
+    min-height: auto;
+    padding: 5px 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+section footer {
+    width: 90vw;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 5px;
+    position: relative;
+    bottom: 0;
+}
+
+section footer p {
+    padding: 10px;
+    text-align: center;
+}
+
+@media (max-width: 720px) {
+    .recipe {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 420px) {
+    form {
+        width: 100%;
+    }
+
+    form input {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
